@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Search from "./Search";
 
 const Navbar = () => {
   return (
@@ -11,6 +12,9 @@ const Navbar = () => {
         >
           LOGO
         </Link>
+        <div>
+          <Search />
+        </div>
         <ul className="inline-flex items-center">
           <li className="px-2 md:px-4">
             <Link

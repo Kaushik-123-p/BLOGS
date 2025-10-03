@@ -9,6 +9,7 @@ import {
   Routes,
 } from "react-router-dom";
 import Home from "./page/Home/Home.jsx";
+import SingleBlog from "./page/Blogs/SingleBlog.jsx";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,11 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "/blogs/:id",
+        element: <SingleBlog />,
+        errorElement: <div>Blog not found!</div>,
       },
     ],
   },
